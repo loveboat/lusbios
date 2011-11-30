@@ -42,7 +42,12 @@
     
     if ([operation isEqualToString:@"+"]) {
         result = [self popOperand] + [self popOperand];
+    } else if ([@"*" isEqualToString:operation]) {
+        result = [self popOperand] * [self popOperand];        
     }
+    //TODO add more operands
+    
+    [self pushOperand:result]; // store the result to allow chaining
     return result;
 }
 
