@@ -14,7 +14,10 @@
 
 - (IBAction)digitPressed:(UIButton *)sender {
     NSString *digit = [sender currentTitle];
-    NSLog(@"digit pressed = %@", digit);
+    UILabel *myDisplay = self.display; // [self display]
+    NSString *currentText = myDisplay.text; // [myDisplay text]
+    NSString *newText = [currentText stringByAppendingString:digit];
+    myDisplay.text = newText; // [myDisplay settext:newText];
 }
 
 @end
