@@ -12,4 +12,9 @@
 
 @synthesize display = _display;
 
+- (IBAction)digitPressed:(UIButton *)sender {
+    NSString *digit = [sender currentTitle];
+    NSLog(@"digit pressed = %@", digit);
+}
+
 @end
