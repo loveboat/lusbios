@@ -17,7 +17,8 @@
 @synthesize operandStack = _operandStack;
 
 - (NSMutableArray *)operandStack {
-    if (_operandStack == nil) _operandStack = [[NSMutableArray alloc] init];
+    if (_operandStack == nil) 
+        _operandStack = [[NSMutableArray alloc] init];
     return _operandStack;
 }
 
