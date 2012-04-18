@@ -22,6 +22,7 @@
 
 - (CalculatorBrain *)brain
 {
+    // instantiate if we don't already have one
     if (!_brain)
         _brain = [[CalculatorBrain alloc] init];
     return _brain;
